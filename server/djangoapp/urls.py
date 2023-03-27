@@ -3,7 +3,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 from . import views
 from .views import about
-
+from .views import contact
 app_name = 'djangoapp'
 urlpatterns = [
     # route is a string contains a URL pattern
@@ -12,7 +12,8 @@ urlpatterns = [
 
     # path for about view
     
-    path('about', about,),
+    path('about', about),
+    path('contact/', contact),
     # path for contact us view
 
     # path for registration
