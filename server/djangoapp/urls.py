@@ -2,6 +2,7 @@ from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
 from . import views
+from .views import about
 
 app_name = 'djangoapp'
 urlpatterns = [
@@ -10,7 +11,8 @@ urlpatterns = [
     # name the URL
 
     # path for about view
-
+    
+    path('about', about,),
     # path for contact us view
 
     # path for registration
